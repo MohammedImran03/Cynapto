@@ -37,6 +37,7 @@ const Home = () => {
     <div className='text-left sm:text-xl font-bold text-gray-800' style={{ whiteSpace: 'nowrap' }}>New Video</div>
   </div>
   </Link>
+  <Link to='/editor'> 
   <div
     className={`flex justify-start items-center py-2 px-1 cursor-pointer bg-slate-300 rounded-md ${selectedItem === 'Home' ? 'bg-blue-400' : ''} transition-colors duration-300 ease-in-out hover:bg-gray-400 focus:bg-gray-400`}
     onClick={() => handleItemClick('Home')}
@@ -46,6 +47,8 @@ const Home = () => {
     </div>
     <div className='text-left sm:text-xl font-bold text-gray-800'>Home</div>
   </div>
+</Link>
+<Link to='/editor'> 
   <div
     className={`flex justify-start items-center py-2 px-1 cursor-pointer bg-slate-300 rounded-md ${selectedItem === 'Template' ? 'bg-blue-400' : ''} transition-colors duration-300 ease-in-out hover:bg-gray-400 focus:bg-gray-400`}
     onClick={() => handleItemClick('Template')}
@@ -55,6 +58,8 @@ const Home = () => {
     </div>
     <div className='text-left sm:text-xl font-bold text-gray-800'>Template</div>
   </div>
+</Link> 
+<Link to='/editor'> 
   <div
     className={`flex justify-start items-center py-2 px-1 cursor-pointer bg-slate-300 rounded-md ${selectedItem === 'All Videos' ? 'bg-blue-400' : ''} transition-colors duration-300 ease-in-out hover:bg-gray-400 focus:bg-gray-400`}
     onClick={() => handleItemClick('All Videos')}
@@ -64,6 +69,7 @@ const Home = () => {
     </div>
     <div className='text-left sm:text-xl font-bold text-gray-800' style={{ whiteSpace: 'nowrap' }}>All Videos</div>
   </div>
+  </Link>
 </div>
 
       </div>
@@ -95,13 +101,16 @@ const Home = () => {
   <div className='text-left sm:text-xl font-bold text-gray-800' style={{ whiteSpace: 'nowrap' }}>Create Project</div>
 </div>
 </Link>
+<Link to='/editor'> 
 <div className='my-2 md:my-0 bg-gray-300 flex justify-center items-center mx-3 p-1 border-2 border-gray-900 rounded-md cursor-pointer transition-colors duration-300 ease-in-out hover:bg-gray-400 focus:bg-gray-400'>
   <div><BiSolidVideoRecording className='m-1 sm:text-xl'/></div>
   <div className='text-left sm:text-xl font-bold text-gray-800' style={{ whiteSpace: 'nowrap' }}>Record Video</div>
 </div>
-
+</Link>
     </div>
-<div className='flex justify-center items-center p-2 mx-1 sm:border-b-2 border-gray-800'><div className='text-left text-md font-bold text-gray-800' style={{ whiteSpace: 'nowrap' }}>View All</div>  <div><FaArrowRight className='m-1 text-md'/></div></div>
+    <Link to='/editor'> 
+<div className='flex justify-center items-center p-2 mx-1 sm:border-b-2 border-gray-800 cursor-pointer'><div className='text-left text-md font-bold text-gray-800' style={{ whiteSpace: 'nowrap' }}>View All</div>  <div><FaArrowRight className='m-1 text-md'/></div></div>
+</Link>
 </div>
 <div className='pl-5 py-3 font-bold sm:text-xl'>Recent Videos</div>
   <div className='w-full mt-2 p-2 pl-2'>
