@@ -1,12 +1,17 @@
 import React from 'react'
-import { MdAddBox } from "react-icons/md";
+import { MdAddBox, MdZoomIn } from "react-icons/md";
 import { TfiLayoutGrid3Alt } from "react-icons/tfi";
-import { FaList,FaPlusSquare,FaHandPaper,FaUpload } from "react-icons/fa";
+import { FaList,FaPlusSquare,FaHandPaper,FaUpload,FaEye,FaLockOpen } from "react-icons/fa";
 import { TbFrame,TbAdjustmentsDown } from "react-icons/tb";
 import Range_Slider from './Range_Slider';
-import { GiClockwiseRotation } from "react-icons/gi";
-import { GrChapterPrevious,GrChapterNext } from "react-icons/gr";
+import { GiClockwiseRotation,GiAnticlockwiseRotation,  } from "react-icons/gi";
+// import { GiAnticlockwiseRotation } from "react-icons/gi";
+import { GrChapterPrevious,GrChapterNext,GrCut } from "react-icons/gr";
 import { IoPlayOutline } from "react-icons/io5";
+import { MdOutlineContentCopy,MdOutlineZoomOut} from "react-icons/md";
+import { FaCopy } from "react-icons/fa6";
+import { BsLayoutSplit } from "react-icons/bs";
+import { AiOutlineZoomIn } from "react-icons/ai";
 
 const Editor = () => {
   return (
@@ -134,15 +139,67 @@ const Editor = () => {
 
 </div>
 
-<div className='bg-red-300 flex flex-col sm:flex-row md:h-2/5 w-full justify-center items-center'>
+<div className='flex flex-col  md:h-2/5 w-full justify-center items-center'>
+
+  <div className='flex flex-col md:flex-row justify-center items-center my-0.5 '>
+    <div className='mr-2 flex flex-row'>
 <div className='flex flex-row justify-center items-center my-1'>
-<div className='mx-2 border-2 border-gray-500 rounded-3xl bg-slate-400 p-2'><GrChapterPrevious className='text-xl font-bold'/></div>
+<div className='mx-2 border-2 border-gray-500 rounded-3xl bg-slate-400 p-2'><GrChapterPrevious className='text-lg md:text-xl font-bold'/></div>
 </div>
 <div className='flex flex-row justify-center items-center mx-1'>
-<div className='mx-2 border-2 border-gray-500 rounded-3xl bg-slate-400 p-2'><IoPlayOutline className='text-xl font-bold'/></div>
+<div className='mx-2 border-2 border-gray-500 rounded-3xl bg-slate-400 p-2'><IoPlayOutline className='text-lg md:text-xl font-bold'/></div>
 </div>
 <div className='flex flex-row justify-center items-center mx-1'>
-<div className='mx-2 border-2 border-gray-500 rounded-3xl bg-slate-400 p-2'><GrChapterNext className='text-xl font-bold'/></div>
+<div className='mx-2 border-2 border-gray-500 rounded-3xl bg-slate-400 p-2'><GrChapterNext className='text-lg md:text-xl font-bold'/></div>
+</div>
+</div>
+
+<div className='flex justify-start items-center border-2 border-gray-500 w-32 h-4'>
+  <div className='bg-gray-500 h-4 w-20'></div>
+</div>
+
+<div className='flex justify-center items-center mx-1'>  00:00 / 00:00</div>
+
+</div>
+
+<div className='flex flex-row border-2 border-gray-600 w-full md:justify-start py-2 justify-center items-center'>
+<div className='mx-2 flex flex-row items-center'>
+  <div className='mx-1'><GiAnticlockwiseRotation className='text-xl font-bold'/></div>
+  <div className='mx-1'><GiClockwiseRotation className='text-xl font-bold'/></div>
+  <div className='mx-1'><GrCut className='text-xl font-bold'/></div>
+  <div className='mx-1'><MdOutlineContentCopy className='text-xl font-bold'/></div>
+  <div className='mx-1'><FaCopy className='text-xl font-bold'/></div>
+  <div className='mx-1'><BsLayoutSplit className='text-xl font-bold'/></div>
+</div>
+<div className='mx-2 flex flex-row items-center'>
+<div className='mx-1'><MdOutlineZoomOut className='text-xl font-bold'/></div>
+<div className='flex justify-start items-center border-2 border-gray-500 w-32 h-4'>
+  <div className='bg-gray-500 h-4 w-20'></div>
+</div>
+<div className='mx-1'><AiOutlineZoomIn className='text-xl font-bold'/></div>
+</div>
+</div>
+
+<div className='border-2 border-gray-600 flex flex-col justify-start items-center w-full'>
+
+<div className='flex flex-row justify-start w-full'>
+  <div className='flex w-24 h-20 border-2 border-red-500 relative justify-start items-center'>
+<div className='text-lg font-bold'>Track 2</div>
+<div className='absolute top-1 right-1'><FaEye /></div>
+<div className='absolute bottom-1 right-1'><FaLockOpen /></div>
+  </div>
+  <div className='border-2 border-gray-600 w-full h-20 bg-gray-400'></div>
+</div>
+
+<div className='flex flex-row justify-start w-full'>
+  <div className='flex w-24 h-20 border-2 border-red-500 relative justify-start items-center'>
+<div className='text-lg font-bold'>Track 1</div>
+<div className='absolute top-1 right-1'><FaEye /></div>
+<div className='absolute bottom-1 right-1'><FaLockOpen /></div>
+  </div>
+  <div className='border-2 border-gray-600 w-full h-20 bg-gray-400'></div>
+</div>
+
 </div>
 
 </div>
