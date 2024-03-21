@@ -183,7 +183,7 @@ const Editor = () => {
 <div className='border-2 border-gray-600 flex flex-col justify-start items-center w-full'>
 
 <div className='flex flex-row justify-start w-full'>
-  <div className='flex w-24 h-20 border-2 border-red-500 relative justify-start items-center'>
+  <div className='flex w-24 h-full border-2 border-red-500 relative justify-start items-center'>
 <div className='text-lg font-bold'>Track 2</div>
 <div className='absolute top-1 right-1'><FaEye /></div>
 <div className='absolute bottom-1 right-1'><FaLockOpen /></div>
@@ -192,7 +192,7 @@ const Editor = () => {
 </div>
 
 <div className='flex flex-row justify-start w-full'>
-  <div className='flex w-24 h-20 border-2 border-red-500 relative justify-start items-center'>
+  <div className='flex w-24 h-full border-2 border-red-500 relative justify-start items-center'>
 <div className='text-lg font-bold'>Track 1</div>
 <div className='absolute top-1 right-1'><FaEye /></div>
 <div className='absolute bottom-1 right-1'><FaLockOpen /></div>
