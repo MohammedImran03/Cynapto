@@ -1,0 +1,91 @@
+/* Editor.css */
+.editor-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Adjust widths on larger screens */
+  @media screen and (min-width: 768px) {
+    .assets-section {
+      flex: 0 0 25%; /* 30% width on medium screens and larger */
+    }
+  
+    .main-content {
+      flex: 0 0 45%; /* 40% width on medium screens and larger */
+    }
+  
+    .properties-section {
+      flex: 0 0 30%; /* 30% width on medium screens and larger */
+    }
+  }
+  
+
+
+  .controlsContainer {
+    margin-top: -3.5em;
+  }
+  
+  .controls {
+    display: flex;
+    z-index: 1;
+    color: white;
+    width: 200px;
+    justify-content: space-between;
+  }
+  
+  .controlButton {
+    border: none;
+    background: none;
+  }
+  
+  .timeline {
+    width: 100%;
+  }
+  
+  .slidecontainer {
+    width: 100%;
+    /* background-color: #d3d3d3; */
+  }
+  
+  .slider {
+    /* Remove width constraint */
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    /* Remove width constraint */
+    /* width: 25px; */
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    /* Remove width constraint */
+    /* width: 25px; */
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+  
+  .duration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .controlButton:hover {
+    cursor: pointer;
+  }
